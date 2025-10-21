@@ -17,5 +17,5 @@ For Agents,
 
 Next
 ```shell
-gh api -H "Accept: application/vnd.github.v3.raw" "/repos/ekozmdev/remote-instructions/contents/{dir_name}/" --jq '.[] | {name, url: .url}'
+gh api -H "Accept: application/vnd.github.raw" "/repos/ekozmdev/remote-instructions/contents/{dir_name}/" --jq '.[] | {name, url: .url}'
 ```

@@ -10,4 +10,12 @@
   - Node.jsに関するインストラクション集
 
 ```
-gh api -H "Accept: application/vnd.github.v3.raw" "/remote-instructions/python/contents/"
+
+For Agents,
+
+おそらくサンドボックス環境ではエラーになるので、ユーザーにサンドボックスの外で実行して良いか確認してください。
+
+Next
+```shell
+gh api -H "Accept: application/vnd.github.v3.raw" "/repos/ekozmdev/remote-instructions/contents/{dir_name}/" --jq '.[] | {name, url: .url}'
+```

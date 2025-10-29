@@ -16,11 +16,13 @@
    .\.venv\Scripts\activate
    ```
 3. 既存プロジェクトで依存関係と仮想環境を同期する。
+
    ```powershell
    uv sync
    ```
 
    - `.python-version` が存在する場合は指定バージョンの Python が利用され、未インストールなら uv が自動取得する。
+
 4. uv 本体をアップデートする。
    ```powershell
    uv self update

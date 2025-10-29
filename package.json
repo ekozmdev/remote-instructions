@@ -1,0 +1,25 @@
+{
+  "name": "remote-instructions",
+  "version": "1.0.0",
+  "description": "このリポジトリはコーディングエージェント用のinstructionを管理しています。",
+  "homepage": "https://github.com/ekozmdev/remote-instructions#readme",
+  "bugs": {
+    "url": "https://github.com/ekozmdev/remote-instructions/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ekozmdev/remote-instructions.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier **/*.md --write",
+    "format:check": "prettier **/*.md --check" 
+  },
+  "dependencies": {
+    "prettier": "^3.6.2"
+  }
+}

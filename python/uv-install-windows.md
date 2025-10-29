@@ -1,9 +1,11 @@
 # uv インストール (Windows)
 
 ## 目的
+
 Windows 環境で Python プロジェクトを管理するために、パッケージマネージャーの uv をユーザー権限でセットアップする。
 
 ## 手順
+
 1. PowerShell を通常権限で起動し、インストールスクリプトを実行する。
    ```powershell
    powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
@@ -18,6 +20,7 @@ Windows 環境で Python プロジェクトを管理するために、パッケ�
    ```
 
 ## 注意点
+
 - 企業ネットワークなどプロキシ環境では、事前に `irm` コマンド（`Invoke-RestMethod`）が外部 URL に到達できるか確認する。
 - uv のインストーラーやオプションは更新されるため、必ず Astral の公式ドキュメントで最新情報を確認する。  
   <https://docs.astral.sh/uv/getting-started/installation/>

@@ -4,12 +4,13 @@
 
 ## 1. 新規プロジェクトを作成する
 
-```powershell
+初期化したいディレクトリに移動して以下のコマンドを実行する
+
+```shell
 uv init .
 ```
 
-- `--python` を省略した場合は、端末にインストール済みの Python のうち最新バージョンが自動選択されます。
-
+- `uv init . --python 3.14` のように、pythonのバージョンを指定することも可能
 
 ## 2. 生成物の確認
 
@@ -23,3 +24,7 @@ uv init .
 [tool.uv]
 add-bounds = "major"
 ```
+
+## パッケージ管理方法をプロジェクトのAGENTS.mdに追記
+
+[uvのパッケージ管理方法](/python/uv-manage-dependencies.md)の内容をプロジェクトのAGENTS.mdに追記する

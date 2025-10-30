@@ -69,8 +69,19 @@ unfixable = [
 プロジェクトのAGENTS.mdにruffの使用方法がない場合は、以下の内容をAGENTS.mdに追記します
 
 ```markdown
-コードを変更した場合はruffを実行してください。
+Pythonコードのlint,formatのためruffを実行してください。
+
+# lint(修正できるものは自動修正)
 
 uv run ruff check --fix
+
+# format
+
 uv run ruff format
 ```
+
+ruffの実行方法はプロジェクトのパッケージ管理ツールに合わせて、適宜修正する。
+
+## git管理対象外ディレクトリの設定
+
+ruffを実行すると`ruff_cache`ディレクトリが作成されるため、プロジェクトの`.gitignore`に`**/ruff_cache/`を追記する

@@ -18,6 +18,7 @@ pyproject.tomlに以下の内容をコメントも含めて追記します。
 line-length = 88
 indent-width = 4
 target-version = "py314"
+force-exclude = true
 
 [tool.ruff.lint]
 select = [
@@ -56,9 +57,6 @@ unfixable = [
     "F841", # unused variable
 ]
 
-force-exclude = true
-
-# (任意) テストだけ緩めたい場合はここでやると粒度が上がる
 [tool.ruff.lint.per-file-ignores]
 "tests/**" = ["S101"]  # テストではassertを許す
 

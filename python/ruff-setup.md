@@ -42,6 +42,7 @@ select = [
 # D206, D300: docstringの引用符・インデント
 # Q000〜Q003: クォート統一
 ignore = [
+    "B008", # FastAPIのDepends()パターンで使用するため(FastAPI公式も同様に無視)
     "E501", # line-too-long: フォーマッタで調整できない場合は無視する(settingsやURLなど)
     # formatterと衝突する/したときにノイズになるルール
     "W191", "E111", "E114", "E117",  # インデント系

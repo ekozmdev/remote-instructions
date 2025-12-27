@@ -17,11 +17,12 @@ uv を使って Python プロジェクトのひな型を作成し、Ruff を導�
 
 ### 2. Ruff を開発依存に追加して設定する
 
-- `python/ruff-setup.md` を参照し、Ruff のインストールと `pyproject.toml` の設定、運用ルールの追記を行う。
+- `python/ruff-setup.md` を参照し、Ruff のインストールと `ruff.toml` の設定、運用ルールの追記を行う。
+- docstring は Google スタイルで書く旨を、プロジェクトの AGENTS.md に追記する。
 
 ### 3. 初期フォーマットと静的解析を確認する
 
-- Ruff の初回実行手順と検証ポイントは `python/ruff-setup.md` の「プロジェクトのAGENTS.mdに追記」「運用確認」を参照する。
+- Ruff の初回実行手順と検証ポイントは `python/ruff-setup.md` の「プロジェクトのAGENTS.mdに追記」を参照する。
 
 ### 4. 初期コミットを作成する
 
